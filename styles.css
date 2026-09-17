@@ -22,3 +22,53 @@ footer .legal a{padding:10px 0;display:inline-block}
 .cookie-settings{font:inherit;font-size:.92rem;color:#c5d2df;background:none;border:0;padding:10px 0;cursor:pointer;text-align:left}
 .cookie-actions button:focus-visible,.cookie-settings:focus-visible{outline:3px solid #fff;outline-offset:3px}
 @media(max-width:700px){.cookie-banner{flex-direction:column;align-items:stretch;gap:14px;padding:16px 20px;padding-bottom:max(16px,env(safe-area-inset-bottom))}.cookie-banner p{font-size:14px}.cookie-actions button{flex:1}.cookie-actions{width:100%}}
+
+/* Reference-inspired editorial consultancy theme. Existing copy is preserved. */
+:root{--navy:#111;--ink:#252525;--teal:#785800;--pale:#f5f5f5;--line:#dedee0;--accent:#f5b619}
+body{font-family:Arial,Helvetica,sans-serif;color:#202020}
+.site-header{height:140px;max-width:1320px;border:0;padding:24px 40px;background:#fff}
+.brand{font-size:25px;gap:17px}
+.brand small{color:#65501a;letter-spacing:.17em;font-weight:500}
+.mark{width:66px;height:66px;flex-shrink:0;border:4px double #9aa1a6;background:#b2b7bc;color:#fff;outline:1px solid #bcc0c4;outline-offset:5px;font-size:36px}
+.site-header nav{align-items:center;gap:30px}
+.site-header nav a{font-size:15px}
+.site-header nav a:last-child{border-radius:50px;background:var(--accent);color:#151515;padding:16px 28px}
+.hero{position:relative;isolation:isolate;max-width:none;background:#ededed;padding:100px max(32px,calc((100vw - 1160px)/2)) 120px;min-height:640px}
+.hero:before{content:"";position:absolute;z-index:-1;width:560px;height:560px;border-radius:50%;background:#e1e2e6;right:-190px;bottom:-200px;pointer-events:none}
+.hero:after{content:"";position:absolute;z-index:-1;width:320px;height:320px;border-radius:50%;border:2px solid var(--accent);right:-100px;top:45px;pointer-events:none}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(42px,5.2vw,74px);line-height:1.13;letter-spacing:-.025em;max-width:970px}
+.hero .lead{font-size:20px;max-width:740px;line-height:1.7}
+.eyebrow{color:#715300;font-size:12px}
+.button{background:var(--accent);color:#171717;border-radius:40px;padding:17px 29px;font-weight:600}
+.button:hover,.site-header nav a:last-child:hover{background:#e6a70b;color:#111}
+.section h2,.notice+section h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.02em}
+#services{position:relative;background:#f7f7f7;max-width:none;padding:85px max(24px,calc((100vw - 1040px)/2))}
+#services>.eyebrow,#services>h2{text-align:center}
+#services>p:not(.eyebrow){max-width:860px;margin:0 auto 40px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;counter-reset:service;max-width:920px;margin:auto}
+.grid article{position:relative;background:var(--accent);border:0;padding:35px 42px 35px 160px;min-height:165px}
+.grid article:before{counter-increment:service;content:"0" counter(service);position:absolute;left:34px;top:35px;bottom:35px;width:95px;border-right:1px solid #fff;font:400 46px/1.6 Georgia,serif;color:#161616}
+.grid h3{margin:0 0 17px;font-size:21px}
+.grid p{margin:0;line-height:1.7}
+#journey{background:#fff}
+#journey>.eyebrow,#journey>h2{text-align:center}
+.steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.steps li{border:1px solid #eee;box-shadow:0 3px 15px #00000008;padding:26px;min-height:155px}
+.steps li:before{color:#795700;border-bottom:1px solid var(--accent);padding-bottom:13px;font-size:20px}
+#finance{gap:65px}
+.notice{background:#111;border-radius:90px;padding:48px 65px;max-width:1100px}
+.notice strong{color:var(--accent)}
+.contact{background:#f6f6f6;max-width:none;border:0}
+.contact a{color:#705100}
+.company-details{color:#333}
+footer{background:#111;color:#ddd}
+.footer-company a,.legal a,.cookie-settings{color:#ddd}
+footer a:hover,.cookie-settings:hover{color:var(--accent)}
+body:has(main:not(#top)) main>.section{max-width:940px;padding-top:65px;padding-bottom:75px}
+body:has(main:not(#top)) main h2{font-size:clamp(30px,4vw,48px)}
+body:has(main:not(#top)) main h3{margin-top:32px}
+body:has(main:not(#top)) main li{margin-bottom:10px}
+a:focus-visible,button:focus-visible{outline:3px solid #9b7200;outline-offset:4px}
+.cookie-actions button{border-color:var(--accent);background:var(--accent);color:#171717;border-radius:28px}
+@media(max-width:900px){.site-header{height:auto;padding:25px 24px;flex-wrap:wrap;gap:28px}.site-header nav{display:flex;flex-wrap:wrap;gap:12px 22px}.hero{padding:65px 28px 80px;min-height:0}.hero h1{font-size:48px}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.notice{margin:0 24px 50px;border-radius:42px;padding:36px}.split{gap:25px}}
+@media(max-width:540px){.brand{font-size:22px}.mark{width:50px;height:50px;font-size:28px}.site-header nav{width:100%;justify-content:space-between;gap:10px}.site-header nav a{font-size:13px}.site-header nav a:last-child{padding:10px 17px}.hero h1{font-size:38px;overflow-wrap:break-word}.hero .lead{font-size:17px}.hero:after{right:-240px}.grid article{padding:28px 24px;min-height:0}.grid article:before{position:static;display:block;border-right:0;border-bottom:1px solid #fff;width:55px;font-size:30px;margin-bottom:18px}.grid h3{font-size:20px}.steps{grid-template-columns:1fr}.notice{border-radius:30px;padding:28px}.section{padding:55px 24px}.company-details{overflow-wrap:anywhere}footer{padding:35px 24px}}
