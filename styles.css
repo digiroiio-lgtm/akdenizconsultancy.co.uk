@@ -28,7 +28,7 @@ footer .legal a{padding:10px 0;display:inline-block}
 body{font-family:Arial,Helvetica,sans-serif;color:#202020}
 .site-header{height:140px;max-width:1320px;border:0;padding:24px 40px;background:#fff}
 .brand{font-size:25px;gap:17px}
-.brand small{color:#65501a;letter-spacing:.17em;font-weight:500}
+.brand small{display:inline;color:#65501a;letter-spacing:.17em;font-weight:500}
 .mark{width:66px;height:66px;flex-shrink:0;border:4px double #9aa1a6;background:#b2b7bc;color:#fff;outline:1px solid #bcc0c4;outline-offset:5px;font-size:36px}
 .site-header nav{align-items:center;gap:30px}
 .site-header nav a{font-size:15px}
