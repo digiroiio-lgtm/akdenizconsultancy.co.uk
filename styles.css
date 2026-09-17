@@ -115,3 +115,30 @@ a:focus-visible,button:focus-visible{outline:3px solid #9b7200;outline-offset:4p
 .why-grid p{font-size:14px;line-height:1.65;color:#ddd;margin:0}
 @media(max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr)}.why-grid article:nth-child(3){border-left:0;border-top:1px solid #555}.why-grid article:nth-child(4){border-top:1px solid #555}}
 @media(max-width:540px){.legal-page>h1{font-size:39px}.legal-page>h2{font-size:27px;margin-top:42px}.legal-toc{display:grid}.why-grid{grid-template-columns:1fr}.why-grid article,.why-grid article:nth-child(4){border-left:0;border-top:1px solid #555}.why-grid article:first-child{border-top:0;min-height:0}.why-grid article{min-height:0}}
+
+
+/* Privacy-at-collection notice and explicit cookie controls. */
+.privacy-at-collection{max-width:780px;margin:30px auto 0;padding:24px 26px;background:#fff;border-left:4px solid var(--accent);text-align:left}
+.privacy-at-collection h3{margin:0 0 10px;font-size:18px}
+.privacy-at-collection p{margin:8px 0;font-size:14px;line-height:1.7}
+.privacy-at-collection a{font-size:inherit}
+.data-safety-note{margin:24px 0;padding:20px 22px;background:#f3f3f3;border-left:4px solid var(--accent)}
+.data-safety-note>strong{display:block;margin-bottom:7px}
+.data-safety-note p{margin:0}
+.cookie-banner{align-items:flex-start}
+.cookie-copy{flex:1;min-width:0}
+.cookie-copy>p{margin:0}
+.cookie-copy>p+P{margin-top:6px}
+.cookie-details{margin-top:14px;padding-top:12px;border-top:1px solid #766f6a}
+.cookie-details p{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:0}
+.cookie-details p+p{margin-top:8px}
+.cookie-actions{align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.cookie-actions .cookie-reject,.cookie-actions .cookie-manage{background:transparent;color:#f7f3ed;border-color:#c2b174}
+.cookie-actions .cookie-reject:hover,.cookie-actions .cookie-manage:hover{background:#5a534f;color:#fff}
+.cookie-actions .cookie-accept{background:var(--accent);border-color:var(--accent);color:#171717}
+.cookie-actions .cookie-accept:hover{background:#e6a70b}
+@media(max-width:700px){
+  .privacy-at-collection{padding:20px}
+  .cookie-actions{display:grid;grid-template-columns:1fr;gap:9px}
+  .cookie-actions button{width:100%}
+}
